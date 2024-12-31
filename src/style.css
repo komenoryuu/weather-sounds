@@ -1,0 +1,91 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('./fonts/Roboto-Regular.ttf') format('truetype'),
+		url('./fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	background: url('./assets/winter-bg.jpg') center / cover no-repeat;
+	width: 100vw;
+	height: 100vh;
+	padding: 50px;
+}
+
+h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: bold;
+	padding-bottom: 25px;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	gap: 35px;
+}
+
+.weather-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	border-radius: 10px;
+	height: 200px;
+	margin-bottom: 25px;
+}
+
+.summer-img {
+	background: url('./assets/summer-bg.jpg') center / cover no-repeat;
+}
+
+.rainy-img {
+	background: url('./assets/rainy-bg.jpg') center / cover no-repeat;
+}
+
+.winter-img {
+	background: url('./assets/winter-bg.jpg') center / cover no-repeat;
+}
+
+.play-button {
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+	transition: all 0.2s;
+	border: none;
+}
+
+.play-button:hover {
+	width: 80px;
+	height: 80px;
+}
+
+.play-button.paused {
+	background: url('./assets/icons/pause.svg') center / cover no-repeat;
+}
+
+.summer-button {
+	background: url('./assets/icons/sun.svg') center / cover no-repeat;
+}
+
+.rainy-button {
+	background: url('./assets/icons/cloud-rain.svg') center / cover no-repeat;
+}
+
+.winter-button {
+	background: url('./assets/icons/cloud-snow.svg') center / cover no-repeat;
+}
+
+.volume-slider {
+	width: 100%;
+	cursor: pointer;
+}
